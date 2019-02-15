@@ -22,7 +22,7 @@ def returnResult (arg1, arg2, arg3, arg4):
   return result
 
 def getResult (arg1):
-  if not arg1 > = 0:
+  if not arg1 >= 0:
     return
   
   returnResult(int(arg1), int(arg1 + 1), int(arg1 + 2), int(arg1 + 3))
