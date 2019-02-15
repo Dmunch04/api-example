@@ -1,0 +1,8 @@
+- Recreate the google search API.
+  - I can't use AJAX API anymore, so I'll have to retrieve HTML data
+- Make an API for stack overflow searcing (With StackAPI)
+  - Make it
+- Make an API for Wikipedia searching
+  - Make it
+- Make an API for YouTube searching
+  - Make it
