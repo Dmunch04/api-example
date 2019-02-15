@@ -42,5 +42,5 @@ def parse_search_json (json):
   return results
     
 def search (searchItem):
-  json = get_search_json(URL_SEARCH + urlquote(url))
+  json = get_search_json(URL_SEARCH + urlquote(searchItem))
   return parse_search_json(json)
