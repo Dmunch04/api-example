@@ -13,13 +13,14 @@ class ExampleFunctions (object):
     return '%s: %s: %s: %s:' % (self.obj1, self.obj2, self.obj3, self.obj4)
   
 def returnResult (arg1, arg2, arg3, arg4):
-  result = []
+  #result = []
   
   r = ExampleFunctions(int(arg1), int(arg2), int(arg3), int(arg4))
   
-  result.append(r)
+  #result.append(r)
   
-  return result
+  #return result
+  return r
 
 def getResult (arg1):
   if not arg1 >= 0:
