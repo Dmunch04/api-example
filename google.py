@@ -32,7 +32,7 @@ def parse_search_json (json):
   results = []
     
   for result in json:
-    search = GoogleSearch(result['titleNoFormatting'], result['content'], result['url'])
+    search = GoogleSearch(str(result['titleNoFormatting']), str(result['content']), str(result['url']))
     
     results.append(search)
     
