@@ -25,7 +25,10 @@ def getResult (arg1):
   if not arg1 >= 0:
     return
   
-  returnResult(int(arg1), int(arg1 + 1), int(arg1 + 2), int(arg1 + 3))
+  #returnResult(int(arg1), int(arg1 + 1), int(arg1 + 2), int(arg1 + 3))
+  data = [int(arg1), int(arg1+1), int(arg1+2), int(arg1+3)]
+  return data
   
 def get (arg):
-  return getResult(arg)
+  result = getResult(arg)
+  return returnResult(result[0], result[1], result[2], result[3])
