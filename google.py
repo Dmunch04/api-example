@@ -22,7 +22,7 @@ class GoogleSearch (object):
 def get_search_json (url):
   raw = urlopen(url)
   
-  json = json.loads(raw)
+  jsonData = json.loads(raw)
   
   results = json
   
