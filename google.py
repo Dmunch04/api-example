@@ -1,6 +1,12 @@
 import os
-import urllib
+import sys
 import json
+if sys.version < '3':
+    from urllib2 import urlopen
+    from urllib import quote as urlquote
+else:
+    from urllib.request import urlopen
+    from urllib.parse import quote as urlquote
 
 URL_SEARCH = 'http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q='
 
@@ -36,5 +42,5 @@ def parse_search_json (json):
   return results
     
 def search (searchItem):
-  json = get_search_json(URL_SEARCH + urllib.quote(url))
+  json = get_search_json(URL_SEARCH + urlquote(url))
   return parse_search_json(json)
