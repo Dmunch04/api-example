@@ -28,4 +28,4 @@ def getResult (arg1):
   returnResult(int(arg1), int(arg1 + 1), int(arg1 + 2), int(arg1 + 3))
   
 def get (arg):
-  getResult(arg)
+  return getResult(arg)
