@@ -24,7 +24,7 @@ def get_search_json (url):
   
   jsonData = json.loads(raw)
   
-  results = json
+  results = jsonData
   
   return results
   
