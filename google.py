@@ -20,7 +20,7 @@ class GoogleSearch (object):
     return '%s: %s (%d)' % (self.title, self.description[:50], '...' if len(self.definition) > 50 else '', self.url)
     
 def get_search_json (url):
-  raw = urllib.urlopen(url)
+  raw = urlopen(url)
   
   json = json.loads(raw)
   
