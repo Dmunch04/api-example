@@ -3,7 +3,7 @@
 # About
 I made this to help others start making their own API's. The `example.py` is the most basic one. It should be really easy to work on from there. If you need any help, feel free to contact me.
 
-# Installation:
+# Integration:
 Wanna test this out yourself? Just add this to your `requirements.txt` (https://pip.pypa.io/en/stable/user_guide/#requirements-files)
 ```
 git://github.com/Dmunch04/api-example.git
@@ -13,7 +13,7 @@ Does it not work? Try this:
 git+git://github.com/Dmunch04/api-example.git
 ```
 
-# Integrate/Use:
+# Example:
 Example of how to use the current example API:
 ```python
 import example as ex
