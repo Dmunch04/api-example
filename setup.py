@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(name='api-example',
     version='1.1',
-    py_modules=['example'],
+    py_modules=['example', 'google'],
     author='Munchii',
     author_email='contact@munchii.me',
     license='MIT',
