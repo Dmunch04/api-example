@@ -30,9 +30,6 @@ def get_search_json (url):
   
 def parse_search_json (json):
   results = []
-
-  if json is None or any (e in json for e in ('error', 'errors')):
-    raise ValueException('Invalid Search')
     
   for result in json:
     search = GoogleSearch(result['titleNoFormatting'], result['content'], result['url'])
