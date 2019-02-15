@@ -21,8 +21,8 @@ import example as ex
 def yourCommand (num):
   result = ex.get(num)
   
-  print(result[0].obj1)
-  print(result[0].obj2)
-  print(result[0].obj3)
-  print(result[0].obj4)
+  print(result.obj1)
+  print(result.obj2)
+  print(result.obj3)
+  print(result.obj4)
 ```
