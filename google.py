@@ -36,7 +36,7 @@ def parse_search_json (json):
     raise ValueException('Invalid Search')
     
   for result in json:
-    search = GoogleSearch(result['titleNoFormatting'], result['content], result['url'])
+    search = GoogleSearch(result['titleNoFormatting'], result['content'], result['url'])
     
     results.append(search)
     
