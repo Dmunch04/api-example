@@ -4,13 +4,6 @@ import json
 
 URL_SEARCH = 'http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q='
 
-encoded = urllib.quote(ex)
-
-rawData = urllib.urlopen('http://ajax.googleapis.com/ajax/services/search/web?v=1.0&q=' + encoded).read()
-
-jsonData = json.loads(rawData)
-results = jsonData['responseData']['results']
-
 class GoogleSearch (object):
   def __init__ (self, title, description, url):
     self.title = title
