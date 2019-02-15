@@ -36,5 +36,5 @@ def parse_search_json (json):
   return results
     
 def search (searchItem):
-  json = get_search_json(URL_SEARCH + urllib.quite(url))
+  json = get_search_json(URL_SEARCH + urllib.quote(url))
   return parse_search_json(json)
