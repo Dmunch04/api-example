@@ -26,21 +26,3 @@ def yourCommand (num):
   print(result.obj3)
   print(result.obj4)
 ```
-
-# Google Search API:
-This is the attributes you can get from the class, GoogleSearch:
-- title ; The title of the website/link
-- description ; The content of the website. We limit it to be the little description we see on the website block on Google
-- url ; The URL for the website
-
-Example of use:
-```python
-import google as google
-
-def mySearch (searchItem):
-  result = google.search(search)[0]
-  
-  print(result.title)           # Prints the title of the result website
-  print(result.description)     # Prints the description of the result website
-  print(result.url)             # Prints the URL of the result website
-```
